@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive 3D Civilization & Monster Survival</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="info">
+        <strong>Civilization Survival Prototype</strong><br>
+        Click & Drag to rotate • Scroll to zoom<br>
+        <em>Workers gather resources automatically! Build walls to defend against night monster raids!</em>
+    </div>
+
+    <div id="hud">
+        🪵 Wood: <span id="wood-count">0</span><br>
+        🪨 Stone: <span id="stone-count">0</span><br>
+        ⛺ Tents: <span id="tent-count">0</span><br>
+        🏠 Houses: <span id="house-count">0</span><br>
+        🏰 Keeps: <span id="keep-count">0</span><br>
+        👷 Workers: <span id="worker-count">2</span><br>
+        🕒 Time: <span id="time-label">Day</span>
+    </div>
+
+    <!-- Ground Build Pop-up Menu -->
+    <div id="build-menu" class="game-menu">
+        <button id="btn-tent" style="display:none;">⛺ Build Tent (3 Wood)</button>
+        <button id="btn-fence" style="display:none;">🪵 Build Fence (2 Wood)</button>
+        <button id="btn-wall" style="display:none;">🧱 Build Stone Wall (2 Stone)</button>
+        <button id="btn-path" style="display:none;">🛤️ Build Path (1 Stone)</button>
+        <button id="btn-worker" style="display:none;">👷 Train Worker (5 Wood)</button>
+        <button id="btn-tree">🌱 Plant Tree</button>
+    </div>
+
+    <!-- Tent/House Upgrade Pop-up Menu -->
+    <div id="tent-menu" class="game-menu">
+        <button id="btn-upgrade-house">🏠 Upgrade to House (5 Wood)</button>
+    </div>
+
+    <div id="house-menu" class="game-menu">
+        <button id="btn-upgrade-keep">🏰 Upgrade to Stone Keep (10 Stone)</button>
+    </div>
+
+    <!-- Three.js Library -->
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+
+    <!-- Tree Logic Module -->
+    <script src="tree.js"></script>
+
+    <!-- Main JavaScript Entry Point -->
+    <script src="main.js"></script>
+</body>
+</html>

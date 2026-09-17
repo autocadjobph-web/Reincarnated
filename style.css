@@ -1,0 +1,63 @@
+body { 
+    margin: 0; 
+    overflow: hidden; 
+    font-family: sans-serif;
+    background-color: #0b0f19;
+}
+#info {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 8px;
+    pointer-events: none;
+    backdrop-filter: blur(4px);
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* HUD Resource & Time Counter */
+#hud {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 8px;
+    pointer-events: none;
+    backdrop-filter: blur(4px);
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* Context Menu Styling */
+.game-menu {
+    position: absolute;
+    display: none;
+    background: rgba(20, 25, 38, 0.9);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    transform: translate(-50%, -100%);
+    margin-top: -12px;
+}
+.game-menu button {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-align: left;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+.game-menu button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
