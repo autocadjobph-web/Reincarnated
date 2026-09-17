@@ -43,17 +43,16 @@
         <button id="btn-upgrade-keep">🏰 Upgrade to Stone Keep (10 Stone)</button>
     </div>
 
-    <!-- Import Map for Three.js ES Modules -->
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
-            }
-        }
-    </script>
+    <!-- Classic Three.js Library -->
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
 
-    <!-- Main JavaScript Entry Point as a Module -->
-    <script type="module" src="main.js"></script>
+    <!-- House & Building Logic Module -->
+    <script src="house.js"></script>
+
+    <!-- Tree Logic Module -->
+    <script src="tree.js"></script>
+
+    <!-- Main JavaScript Entry Point -->
+    <script src="main.js"></script>
 </body>
 </html>
